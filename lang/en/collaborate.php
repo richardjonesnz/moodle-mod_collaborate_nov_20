@@ -44,3 +44,4 @@ $string['collaborate'] = 'collaborate';
 $string['pluginadministration'] = 'collaborate administration';
 $string['pluginname'] = 'collaborate';
 $string['title'] = 'Title of this Collaborate';
+$string['greeting'] = 'I am a great developer!';

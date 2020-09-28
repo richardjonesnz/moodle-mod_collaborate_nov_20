@@ -64,6 +64,8 @@ class view implements renderable, templatable {
         $data->body = format_module_intro('collaborate',
                 $this->collaborate, $this->id);
 
+        $data->message = get_string('greeting', 'mod_collaborate');
+
         return $data;
     }
 }
