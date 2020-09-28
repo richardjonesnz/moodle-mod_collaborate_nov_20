@@ -1,3 +1,4 @@
+
 <?php
 // This file is part of Moodle - http://moodle.org/
 //
@@ -14,8 +15,12 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+
 /**
- * Defines the version and other meta-info about the plugin
+ * English strings for collaborate
+ *
+ * You can have a rather longer description of the file as well,
+ * if you like, and it can span multiple lines.
  *
  * @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
@@ -26,8 +31,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'mod_collaborate';
-$plugin->version = 202009280;
-$plugin->release = 'v1.1';
-$plugin->requires = 2020060900;
-$plugin->maturity = MATURITY_BETA;
+$string['modulename'] = 'Collaborate';
+$string['modulenameplural'] = 'Collaborates';
+$string['modulename_help'] = 'Use the collaborate module for... | The collaborate module allows...';
+$string['collaborate:addinstance'] = 'Add a new collaborate';
+$string['collaborate:submit'] = 'Submit collaborate';
+$string['collaborate:view'] = 'View collaborate';
+$string['collaboratefieldset'] = 'Custom example fieldset';
+$string['collaboratename'] = 'collaborate name';
+$string['collaboratename_help'] = 'This is the content of the help tooltip associated with the collaboratename field. Markdown syntax is supported.';
+$string['collaborate'] = 'collaborate';
+$string['pluginadministration'] = 'collaborate administration';
+$string['pluginname'] = 'collaborate';
+$string['title'] = 'Title of this Collaborate';
