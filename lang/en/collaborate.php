@@ -46,3 +46,6 @@ $string['pluginname'] = 'collaborate';
 $string['title'] = 'Title of this Collaborate';
 $string['title_help'] = 'Please select a suitable title for your Collaborate main page';
 $string['greeting'] = 'I am a great developer!';
+
+// Events.
+$string['pageviewed'] = 'Collaborate page viewed.';
