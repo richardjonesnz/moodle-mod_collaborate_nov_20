@@ -33,15 +33,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Collaborate';
 $string['modulenameplural'] = 'Collaborates';
-$string['modulename_help'] = 'Use the collaborate module for... | The collaborate module allows...';
+$string['modulename_help'] = 'Use the collaborate module for Pair work | The collaborate module allows two participants to submit assignments based on the same resource.';
 $string['collaborate:addinstance'] = 'Add a new collaborate';
 $string['collaborate:submit'] = 'Submit collaborate';
 $string['collaborate:view'] = 'View collaborate';
 $string['collaboratefieldset'] = 'Custom example fieldset';
 $string['collaboratename'] = 'collaborate name';
-$string['collaboratename_help'] = 'This is the content of the help tooltip associated with the collaboratename field. Markdown syntax is supported.';
+$string['collaboratename_help'] = 'Name of the individual Collaborater activity as it appears in your course.';
 $string['collaborate'] = 'collaborate';
 $string['pluginadministration'] = 'collaborate administration';
 $string['pluginname'] = 'collaborate';
 $string['title'] = 'Title of this Collaborate';
+$string['title_help'] = 'Please select a suitable title for your Collaborate main page';
 $string['greeting'] = 'I am a great developer!';
