@@ -54,3 +54,11 @@ $string['pageviewed'] = 'Collaborate page viewed.';
 $string['title'] = 'Title of this Collaborate';
 $string['title_help'] = 'Please select a suitable title for your Collaborate main page';
 $string['texteditor'] = 'Instructions {$a}';
+
+// User button labels.
+$string['studenta'] = 'Partner A';
+$string['studentb'] = 'Partner B';
+
+// Showpage.
+$string['user'] = 'User: {$a}';
+$string['returnview'] = 'Main page';

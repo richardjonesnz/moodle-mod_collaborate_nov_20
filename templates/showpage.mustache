@@ -27,26 +27,30 @@
     * none
 
     Context variables required for this template:
-    * title String a page title.
-    * body String of html code the formatted module intro.
-    * urla URL of partner a instructions page
-    * urlb URL of partner b instructions page
+    * heading page heading.
+    * user Label for user a or b
+    * body html content of the page
+    * url_view URL of the activity main page
 
     Example context (json):
         {
-         "title": "My heading",
+         "heading": "My heading",
+         "user": "User A"
          "body": "<p>My html body</p>",
-         "urla": "#",
-         "urlb": "#",
+         "url_view": "#"
         }
 }}
-<div class="card">
+<div class = "container">
+  <div class="card">
     <div class="card-body">
-        <h2 class="card-title">{{title}}</h2>
-        {{{body}}}
+      <h2 class="card-title">{{heading}}</h2>
+      <h3>{{user}}</h3>
+      {{{body}}}
     </div>
-    <div class = "container">
-        <a href = "{{url_a}}" class="btn btn-primary">{{# str }} studenta, mod_collaborate {{/ str }}</a>
-        <a href = "{{url_b}}" class="btn btn-primary">{{# str }} studentb, mod_collaborate {{/ str }}</a>
-    </div>
+  </div>
+  <p><br>
+    <a href = "{{url_view}}" class="btn btn-primary">
+       {{# str }} returnview, mod_collaborate {{/ str }}
+    </a>
+  </p>
 </div>
