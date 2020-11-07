@@ -59,10 +59,19 @@ $string['studentb'] = 'Partner B';
 // Showpage.
 $string['user'] = 'User: {$a}';
 $string['returnview'] = 'Main page';
+
+// Grading and submissions.
 $string['submissionupdated'] = 'Submission updated';
 $string['submissionsave'] = 'Save submission';
 $string['submission'] = 'Your submission';
 $string['id'] = 'id';
+$string['grade'] = 'Grade';
+$string['gradingheader'] = 'Grade a submission';
+$string['currentgrade'] = 'Current grade: ';
+$string['allocate_grade'] = 'Grade to award: ';
+$string['user'] = 'User: ';
+$string['grade_saved'] = 'Grade saved';
+$string['submissiongraded'] = 'Submission graded';
 
 // Settings.
 $string['enablereports']  = 'Enable reports';
@@ -72,6 +81,7 @@ $string['enablereports_desc']  = 'When checked, teachers can see the reports tab
 $string['collaborate:addinstance'] = 'Add a new collaborate';
 $string['collaborate:view'] = 'View collaborate';
 $string['collaborate:viewreportstab'] = 'View the reports tab';
+$string['collaborate:gradesubmission'] = 'Grade a student submission';
 
 // Tab lables.
 $string[ 'viewtab'] = "View";

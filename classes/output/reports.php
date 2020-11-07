@@ -98,6 +98,13 @@ class reports implements renderable, templatable {
             $data['firstname'] = $user->firstname;
             $data['lastname'] = $user->lastname;
             $data['grade'] = $record->grade;
+            $data['grade'] = ($record->grade == 0) ? '-' : $record->grade;
+
+            // Add a URL to the grading page.
+            $g = new \moodle_url('/mod/collaborate/grading.php', ['cid' => $this->collaborate->id, 'sid' => $record->id]);
+            $data['gradelink'] = $g->out(false);
+            $data['gradetext'] = get_string('grade', 'mod_collaborate');
+
             $submissions[] = $data;
         }
 
