@@ -59,6 +59,9 @@ $string['studentb'] = 'Partner B';
 // Showpage.
 $string['user'] = 'User: {$a}';
 $string['returnview'] = 'Main page';
+$string['submissionupdated'] = 'Submission updated';
+$string['submissionsave'] = 'Save submission';
+$string['submission'] = 'Your submission';
 
 // Settings.
 $string['enablereports']  = 'Enable reports';
