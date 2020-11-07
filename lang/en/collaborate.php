@@ -62,6 +62,7 @@ $string['returnview'] = 'Main page';
 $string['submissionupdated'] = 'Submission updated';
 $string['submissionsave'] = 'Save submission';
 $string['submission'] = 'Your submission';
+$string['id'] = 'id';
 
 // Settings.
 $string['enablereports']  = 'Enable reports';

@@ -21,7 +21,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @see https://github.com/moodlehq/moodle-mod_collaborate
  * @see https://github.com/justinhunt/moodle-mod_collaborate */
-
+use mod_collaborate\output\reports;
 require_once('../../config.php');
 
 // The collaborate instance id.
@@ -46,6 +46,14 @@ $PAGE->set_pagelayout('course');
 // Prevent direct acess to the url.
 require_capability('mod/collaborate:viewreportstab', $context);
 
-$OUTPUT->header();
-echo 'reports';
-$OUTPUT->footer();
+// Check the config.
+$config = get_config('mod_collaborate');
+if (!$config->enablereports) {
+    $returnurl = new moodle_url('/mod/collaborate/view.php', ['n' => $cid]);
+    redirect ($returnurl, get_string('nopermission', 'mod_collaborate'), null, notification::NOTIFY_ERROR);
+}
+
+echo $OUTPUT->header();
+// Create output object and render it using the template.
+echo $OUTPUT->render(new reports($collaborate, $cm->id));
+echo $OUTPUT->footer();
