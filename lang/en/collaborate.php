@@ -34,9 +34,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['modulename'] = 'Collaborate';
 $string['modulenameplural'] = 'Collaborates';
 $string['modulename_help'] = 'Use the collaborate module for Pair work | The collaborate module allows two participants to submit assignments based on the same resource.';
-$string['collaborate:addinstance'] = 'Add a new collaborate';
-$string['collaborate:submit'] = 'Submit collaborate';
-$string['collaborate:view'] = 'View collaborate';
 $string['collaboratefieldset'] = 'Custom example fieldset';
 $string['collaboratename'] = 'collaborate name';
 $string['collaboratename_help'] = 'Name of the individual Collaborater activity as it appears in your course.';
@@ -62,3 +59,16 @@ $string['studentb'] = 'Partner B';
 // Showpage.
 $string['user'] = 'User: {$a}';
 $string['returnview'] = 'Main page';
+
+// Settings.
+$string['enablereports']  = 'Enable reports';
+$string['enablereports_desc']  = 'When checked, teachers can see the reports tab';
+
+//Permissions strings.
+$string['collaborate:addinstance'] = 'Add a new collaborate';
+$string['collaborate:view'] = 'View collaborate';
+$string['collaborate:viewreportstab'] = 'View the reports tab';
+
+// Tab lables.
+$string[ 'viewtab'] = "View";
+$string[ 'reportstab'] = "Reports";
