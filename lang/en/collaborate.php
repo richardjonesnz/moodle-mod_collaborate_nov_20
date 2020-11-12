@@ -47,6 +47,7 @@ $string['greeting'] = 'I am a great developer!';
 // Events.
 $string['pageviewed'] = 'Collaborate page viewed.';
 $string['submission_submitted'] = 'Submission submitted.';
+$string['submission_graded'] = 'Submission graded.';
 
 // Custom trings for mod_form.
 $string['title'] = 'Title of this Collaborate';

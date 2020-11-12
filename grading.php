@@ -64,6 +64,14 @@ $reportsurl = new moodle_url('/mod/collaborate/reports.php', ['cid' => $cid]);
 if ($data = $form->get_data()) {
     // Save the data here.
     submissions::update_grade($sid, $data->grade);
+
+    // Log the submission graded event.
+    $event = \mod_collaborate\event\submission_graded::create(
+            ['context' => $PAGE->context, 'objectid' => $PAGE->cm->instance]);
+    $event->add_record_snapshot('course', $PAGE->course);
+    $event->add_record_snapshot($PAGE->cm->modname, $collaborate);
+    $event->trigger();
+
     redirect ($reportsurl, get_string('submissiongraded', 'mod_collaborate'), 2, notification::NOTIFY_SUCCESS);
 }
 
