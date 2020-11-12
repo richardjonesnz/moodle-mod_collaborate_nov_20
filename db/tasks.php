@@ -13,37 +13,24 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * The page viewed event.
+ * This file keeps track of scheduled tasks
  *
  * @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @see https://github.com/moodlehq/moodle-mod_newmodule
+ * @see https://github.com/justinhunt/moodle-mod_pairwork
  */
 
-namespace mod_collaborate\event;
-
-class page_viewed extends \core\event\base {
-    protected function init() {
-        $this->data['objecttable'] = 'collaborate';
-        $this->data['crud'] = 'r';
-        $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
-    }
-
-    public static function get_name() {
-        return get_string('pageviewed', 'mod_collaborate');
-    }
-    /**
-     * Returns non-localised event description with id's for admin use only.
-     *
-     * @return string
-     */
-    public function get_description() {
-        return "The user with id '$this->userid' has
-                viewed a page with the id '$this->objectid'
-                in the Collaborate activity with course
-                module id '$this->contextinstanceid'.";
-    }
-
-}
+$tasks = [
+    [
+        'classname' => '\mod_collaborate\task\scheduled_export',
+        'blocking' => 0,
+        'minute' => '*/1',
+        'hour' => '*',
+        'day' => '*',
+        'dayofweek' => '*',
+        'month' => '*'
+    ]
+];

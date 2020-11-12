@@ -15,35 +15,35 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The page viewed event.
+ * Class for handling a scheduled task.
+ *
+ * @package   mod_collaborate
+ * @copyright 2020 Richard Jones https://richardnz.net
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+namespace mod_collaborate\task;
+
+defined('MOODLE_INTERNAL') || die();
+
+/**
+ * A scheduled task.
  *
  * @package    mod_collaborate
- * @copyright  2019 Richard Jones richardnz@outlook.com
+ * @since      Moodle 2.7
+ * @copyright  2015 Flash Gordon http://www.flashgordon.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+class scheduled_export extends \core\task\scheduled_task {
 
-namespace mod_collaborate\event;
+    public function get_name() {
+        // Shown in admin screens
+        return get_string('exportall', 'mod_collaborate');
 
-class page_viewed extends \core\event\base {
-    protected function init() {
-        $this->data['objecttable'] = 'collaborate';
-        $this->data['crud'] = 'r';
-        $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
     }
-
-    public static function get_name() {
-        return get_string('pageviewed', 'mod_collaborate');
-    }
-    /**
-     * Returns non-localised event description with id's for admin use only.
-     *
-     * @return string
+     /**
+     *  Run all the tasks
      */
-    public function get_description() {
-        return "The user with id '$this->userid' has
-                viewed a page with the id '$this->objectid'
-                in the Collaborate activity with course
-                module id '$this->contextinstanceid'.";
+     public function execute() {
+       \mod_collaborate\local\submissions::export_all_submissions();
     }
-
 }

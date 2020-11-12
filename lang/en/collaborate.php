@@ -46,6 +46,7 @@ $string['greeting'] = 'I am a great developer!';
 
 // Events.
 $string['pageviewed'] = 'Collaborate page viewed.';
+$string['submission_submitted'] = 'Submission submitted.';
 
 // Custom trings for mod_form.
 $string['title'] = 'Title of this Collaborate';
@@ -90,6 +91,8 @@ $string[ 'reportstab'] = 'Reports';
 
 // Export.
 $string['exportlink'] = 'Export submissions';
+$string['exportall'] = 'Export all submissions';
+
 
 // Navigation.
 $string['namechange'] = 'Change name';
