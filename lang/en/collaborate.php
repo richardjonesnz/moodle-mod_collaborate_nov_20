@@ -82,7 +82,11 @@ $string['collaborate:addinstance'] = 'Add a new collaborate';
 $string['collaborate:view'] = 'View collaborate';
 $string['collaborate:viewreportstab'] = 'View the reports tab';
 $string['collaborate:gradesubmission'] = 'Grade a student submission';
+$string['collaborate:exportsubmissions'] = 'Export student submissions';
 
-// Tab lables.
-$string[ 'viewtab'] = "View";
-$string[ 'reportstab'] = "Reports";
+// Tab labels.
+$string[ 'viewtab'] = 'View';
+$string[ 'reportstab'] = 'Reports';
+
+// Export.
+$string['exportlink'] = 'Export submissions';
