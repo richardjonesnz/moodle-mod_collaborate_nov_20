@@ -90,3 +90,6 @@ $string[ 'reportstab'] = 'Reports';
 
 // Export.
 $string['exportlink'] = 'Export submissions';
+
+// Navigation.
+$string['namechange'] = 'Change name';
